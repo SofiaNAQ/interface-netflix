@@ -13,6 +13,12 @@
     src: url('../fonts/NetflixSansBold.ttf');
 }
 
+@font-face {
+    font-family: Netflix-Medium;
+    src: url('../fonts/NetflixSansMedium.ttf');
+}
+
+
 :root{
     --vermelho:#E50914;
     --preto:#141414;
@@ -35,25 +41,32 @@ a{
     text-decoration: none;
 }
 
+.container{
+    padding: 0 30px;
+}
+
 header .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+    /*justify-content: space-between;*/
+    padding: 15px 30px;
 }
 
 .logo{
     color: var(--vermelho);
     font-family: 'Netflix-Bold';
     text-transform: uppercase;
+    margin-right: 20px;
 }
 
 .container nav a{
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 15px;
+    transition: .5s;
 }
 
 .container nav a:hover{
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6);;
 }
 
 /* ----- FILME PRINCIPAL ----- */
@@ -71,6 +84,52 @@ header .container{
     align-items: flex-start;
 }
 
+.filme-principal .container{
+    width: 60%;
+}
+
+.titulo{
+    margin-top: 15%;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.buttons{
+    margin-top: 40px;
+}
+
 .btn{
-    text-transform: uppercase;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-family: 'Netflix-Medium';
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn i{
+    margin-right: 5px;
+}
+
+.btn:nth-child(1){
+    background: #fff;
+}
+
+.btn:nth-child(2){
+    background: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+.film-carousel{
+    margin-top: 10px;
+}
+
+.img-item{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.owl-dots{
+    display: none!important;
 }
