@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Netflix-Regular;
+    src: url('../fonts/NetflixSansRegular.ttf');
+}
+
+@font-face {
+    font-family: Netflix-Black;
+    src: url('../fonts/NetflixSansBlack.ttf');
+}
+
+@font-face {
+    font-family: Netflix-Bold;
+    src: url('../fonts/NetflixSansBold.ttf');
+}
+
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Netflix-Regular', Times, serif;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo{
+    color: var(--vermelho);
+    font-family: 'Netflix-Bold';
+    text-transform: uppercase;
+}
+
+.container nav a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.container nav a:hover{
+    color: #fff;
+}
+
+/* ----- FILME PRINCIPAL ----- */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)100%), url('../img/capa-house.jpg');
+    background-size: cover;
+
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.btn{
+    text-transform: uppercase;
+}
